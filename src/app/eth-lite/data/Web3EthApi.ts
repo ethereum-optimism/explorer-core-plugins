@@ -19,21 +19,25 @@ export class Web3EthApi {
     async getBlockRangeTransactionCount(rangeStart: number, rangeEnd: number) {
         let resultsPromises: Promise<IBlockTxCount | undefined>[] = [];
         for (let i = rangeStart; i < rangeEnd; i++) {
-            resultsPromises.push(
-                this.web3Eth.getBlockTransactionCount(i).then( result => {
-                    if (!result) {
-                        return void 0;
-                    }
-                    let blockValue: IBlockTxCount = {
-                        id: i,
-                        transactionCount: result
-                    };
-                    return blockValue;
+            const blockValue: IBlockTxCount = {
+                id: i,
+                transactionCount: 1 //Optimism, there's only ever 1 tx per block
+            };
+            resultsPromises.push(Promise.resolve(blockValue));
+                // this.web3Eth.getBlockTransactionCount(i).then( result => {
+                //     if (!result) {
+                //         return void 0;
+                //     }
+                //     let blockValue: IBlockTxCount = {
+                //         id: i,
+                //         transactionCount: result
+                //     };
+                //     return blockValue;
 
-                }).catch( e => {
-                    return void 0;
-                }
-            ));
+                // }).catch( e => {
+                //     return void 0;
+                // }
+            // ));
         }
         return await Promise.all(resultsPromises).then(results => results.filter(r => r !== void 0));
     }

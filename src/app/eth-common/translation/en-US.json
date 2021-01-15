@@ -59,7 +59,7 @@
 
     "blockView.content.noData.text": "It seems there is no data to display. <br /> Try searching for a different block.",
     "blockView.content.blockSummary.txs.label": "%d TXs",
-    "blockView.content.blockCreationTime.label": "Time",
+    "blockView.content.blockCreationTime.label": "Last Finalized L1 Timestamp:",
     "blockView.content.uncles.label": "Uncles",
     "blockView.content.transactions.label": "Transactions",
     "blockView.content.dataNotLoaded.text": "Data is still being processed. Please be patient",

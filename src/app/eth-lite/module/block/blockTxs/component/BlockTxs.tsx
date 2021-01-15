@@ -66,7 +66,7 @@ export class BlockTxs extends React.Component<IBlockTxsProps> {
             </LayoutRow>
             { txs.length ?
             <>
-                { txsViewMode.isHeatMapGrid ?
+                { false ?
                 <LayoutRow>
                     <LayoutRowItem fullRow autoHeight>
                         <div />

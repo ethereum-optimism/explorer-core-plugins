@@ -71,7 +71,7 @@
     "blockView.content.noData.text": "It seems there is no data to display. <br /> Try searching for a different block.",
     "blockView.content.dataNotLoaded.text": "Data is still being processed. Please be patient",
     "blockView.content.blockNumber.label": "Block",
-    "blockView.content.blockCreationTime.label": "Time",
+    "blockView.content.blockCreationTime.label": "Last Finalized L1 Timestamp:",
     "blockView.content.inconsistentWarning.text": "Due to a bug we encountered in Parity, we were not able to fully process this block so data might be temporarily incomplete. We are working on fixing this",
     "blockView.content.parentHash.label": "Parent",
     "blockView.content.blockSize.label": "Size",

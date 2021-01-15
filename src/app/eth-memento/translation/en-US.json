@@ -34,13 +34,13 @@
     "general.grid.footer.loadMore.label": "Load More",
     "general.grid.footer.norowsavailable.label": "These are not the droids you are looking for",
 
-    "dashboardView.title": "Ethereum Lite Explorer",
-    "dashboardView.subTitle": "An open source Ethereum block explorer. Available on {gitHubLink}",
+    "dashboardView.title": "Optimistic Ethereum (Goerli) Explorer",
+    "dashboardView.subTitle": "An open source block explorer forked from Aleth.io.",
 
     "blockView.content.noData.text": "It seems there is no data to display. <br /> Try searching for a different block.",
     "blockView.content.dataNotLoaded.text": "Data is still being processed. Please be patient",
     "blockView.content.blockNumber.label": "Block",
-    "blockView.content.blockCreationTime.label": "Time",
+    "blockView.content.blockCreationTime.label": "Last Finalized L1 Timestamp:",
     "blockView.content.inconsistentWarning.text": "Due to a bug we encountered in Parity, we were not able to fully process this block so data might be temporarily incomplete. We are working on fixing this",
     "blockView.content.parentHash.label": "Parent",
     "blockView.content.blockSize.label": "Size",
